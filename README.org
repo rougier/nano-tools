@@ -1,0 +1,25 @@
+* N Λ N O tools
+
+nano-tools provides a set of tools that are not worth to be packaged and depends on [[https://github.com/rougier/nano-modeline][nano-modeline]], [[https://github.com/rougier/nano-read][nano-read]] and [[https://github.com/rougier/nano-theme/][nano-theme]].
+
+** [[./nano-box.el][nano-box.el]]
+
+This allows to add a one pixel border around a buffer. This works by using an overline for the header-line, an underline for the mode-line and a one pixel fringe whose background color is set to the default foregroudn color.
+
+** [[./nano-popup.el][nano-popup.el]]
+
+This allows to toggle a popup window at the bottom while retaining its size when it is changed.
+
+** [[./nano-term.el][nano-term.el]]
+
+This shows a quake like console (using eat terminal) at the bottom of
+the frame that can be toggles. Size is memorized when changed.
+
+** [[./nano-kill.el][nano-kill.el]]
+
+This can be used to replace the kill-buffer and kill-emacs function, taking advantage of the nano-read functions.
+
+** [[./nano-journal.el][nano-journal.el]]
+
+This is a very minimal journal system based on org-mode that log 
+entries. Each tome the journal is shown, a new entry is created using the current time.
