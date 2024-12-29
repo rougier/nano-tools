@@ -20,23 +20,20 @@
 
 ;;; Commentary:
 
-;; This packa allows to surround a buffer by a one pixel line, taking
-;; advantage of fringes, the header line and the mode line. This requires
-;; to have nano-modelne installed as header line."
+;; This package allows to surround a buffer with a one pixel line,
+;; taking advantage of fringes, header line and mode line. This
+;; requires to have nano-modelne installed as header line.
 
 ;;; Example usage
 
-;; ;; This add a box aroudn any buffer in prog or text mode
+;; ;; This adds a box around any buffer in prog mode
 ;;
 ;; (defun my/display-buffer-box (window)
 ;;   (with-current-buffer (window-buffer window)
 ;;     (nano-box-on)))
-
-;; (defun my/display-buffer-prog-text-p (buffer-name _action)
-;;   (with-current-buffer (get-buffer buffer-name)
-;;     (derived-mode-p '(prog-mode text-mode))))
-
-;; (setq display-buffer-alist '((my/display-buffer-prog-text-p
+;;
+;; (setq display-buffer-alist '(((derived-mode . (prog-mode))
+;;                               display-buffer-reuse-window
 ;;                               display-buffer-same-window
 ;;                               (body-function . my/display-buffer-box))))
 
