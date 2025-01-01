@@ -43,8 +43,7 @@ does not change the window size."
                          `((display-buffer-at-bottom)
                            ,(when (boundp 'window-height)
                               (cons 'window-height window-height)))))
-        (setq-local window-height (window-height (get-buffer-window buffer)))
-      (set-window-dedicated-p nil t)))))
+        (setq-local window-height (window-height (get-buffer-window buffer)))))))
 
 
 (provide 'nano-popup)
