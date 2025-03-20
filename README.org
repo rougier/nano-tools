@@ -4,7 +4,7 @@ nano-tools provides a set of tools that are not worth to be packaged and depends
 
 ** [[./nano-box.el][nano-box.el]]
 
-This allows to add a one pixel border around a buffer. This works by using an overline for the header-line, an underline for the mode-line and a one pixel fringe whose background color is set to the default foregroudn color.
+This allows to add a one pixel border around a buffer. This works by using an overline for the header-line, an underline for the mode-line and a one pixel fringe whose background color is set to the default foreground color.
 
 ** [[./nano-popup.el][nano-popup.el]]
 
@@ -22,4 +22,4 @@ This can be used to replace the kill-buffer and kill-emacs function, taking adva
 ** [[./nano-journal.el][nano-journal.el]]
 
 This is a very minimal journal system based on org-mode that log 
-entries. Each tome the journal is shown, a new entry is created using the current time.
+entries. Each time the journal is shown, a new entry is created using the current time.
