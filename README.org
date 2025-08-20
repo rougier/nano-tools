@@ -13,7 +13,7 @@ This allows to toggle a popup window at the bottom while retaining its size when
 ** [[./nano-term.el][nano-term.el]]
 
 This shows a quake like console (using eat terminal) at the bottom of
-the frame that can be toggles. Size is memorized when changed.
+the frame that can be toggled. Size is memorized when changed.
 
 ** [[./nano-kill.el][nano-kill.el]]
 
